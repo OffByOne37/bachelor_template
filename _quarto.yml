@@ -1,0 +1,62 @@
+project:
+  type: uibk_thesis_template
+  output-dir: "_thesis"
+
+book:
+  date-format: "YYYY" 
+  chapters:
+    - index.qmd
+    - chapters/06-glossary.qmd # not required
+    - chapters/01-introduction.qmd
+    - chapters/02-chapter-1.qmd
+    - chapters/03-chapter-2.qmd
+    - chapters/04-discussion.qmd
+    - chapters/05-bibliography.qmd
+  appendices: 
+    - appendices/01-test.qmd
+  output-file: thesis
+
+
+  
+thesis:
+  title: The title of my thesis 
+  subtitle: A subtitle
+  author: Max Mustermann
+  matr-nr: 12026028
+  date: 12.12.2023
+  university: Leopold-Franzens Universität Innsbruck
+  faculty: Faculty of Mathematics, Computer Science, and Physics
+  department: Institute of Mathematics
+  type: Bachelor's thesis
+  degree: Bachelor of Education
+  supervisor: 
+    - Dr. Awesome Supervisor
+    - Dr. Awesome 2
+    - Dr. Awesome 3
+  lang-english: true # else remove this statement
+  abstract-english: |
+    Nam non neque aliquet, rutrum tortor eget, pulvinar libero. Integer sed ante nisi. Integer scelerisque interdum nunc, a dictum est vestibulum ac. Aliquam lorem nibh, blandit non ullamcorper sed, fringilla ac enim. Aliquam semper quis tortor sit amet elementum. Praesent orci lectus, rhoncus rutrum nisl ac, aliquet pharetra est. Fusce posuere, risus at ultrices molestie, metus ante dictum augue, eget pulvinar sem justo vitae libero. Nam ut lacus ac nisl dictum cursus. Nullam non justo in ligula lobortis consectetur. Sed pretium mollis quam, sit amet aliquam lorem maximus eget. Cras malesuada efficitur risus id placerat. Nullam et feugiat sapien. In dignissim ante ac nibh varius, eu tincidunt ex molestie. Sed vitae dignissim urna. Donec ac sapien mattis, ultricies eros ut, vehicula mauris.
+  abstract-german: |
+    Nam non neque aliquet, rutrum tortor eget, pulvinar libero. Integer sed ante nisi. Integer scelerisque interdum nunc, a dictum est vestibulum ac. Aliquam lorem nibh, blandit non ullamcorper sed, fringilla ac enim. Aliquam semper quis tortor sit amet elementum. Praesent orci lectus, rhoncus rutrum nisl ac, aliquet pharetra est. Fusce posuere, risus at ultrices molestie, metus ante dictum augue, eget pulvinar sem justo vitae libero. Nam ut lacus ac nisl dictum cursus. Nullam non justo in ligula lobortis consectetur. Sed pretium mollis quam, sit amet aliquam lorem maximus eget. Cras malesuada efficitur risus id placerat. Nullam et feugiat sapien. In dignissim ante ac nibh varius, eu tincidunt ex molestie. Sed vitae dignissim urna. Donec ac sapien mattis, ultricies eros ut, vehicula mauris.
+ 
+format:
+  uibk_thesis_template-pdf:
+    lot: true # show list of tables? (not required)
+    lof: true # show list of figures? (not required)
+    linestretch: 1 #sets line-spacing
+    toc-title: "Inhalt"
+    
+language: 
+  section-title-appendices: "Anhang" #Ändere für Anhang
+
+fig-dpi: 800
+fig-align: center
+lang: en
+
+echo: false
+warning: false
+message: false
+
+csl: apa.csl
+bibliography:
+  - references.bib
