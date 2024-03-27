@@ -1,0 +1,30 @@
+---
+title: Glossar {-}
+---
+<!--
+Please keep the pagenumbering latex code -> otherwise it will have a numbering in the toc. 
+-->
+\pagenumbering{gobble}
+<!--
+You can modify the code from here. 
+-->
+
+Some term
+: The definition of this term
+
+Another term
+: The definition of this other term
+
+Get it?
+: Another term with its corresponding definitions
+
+
+
+<!--
+Please keep the pagenumbering latex code -> otherwise it will have a numbering in the toc. 
+-->
+{{< pagebreak >}}
+\pagenumbering{arabic}
+<!--
+You can modify the code from here. 
+-->
