@@ -1,6 +1,14 @@
+<<<<<<< HEAD
 ---
 title: Bibliography {-}
 ---
 
 ::: {#refs}
+=======
+---
+title: Bibliography / Inhaltsverzeichnis -> bitte einfach entsprechend im .qmd ändern {-}
+---
+
+::: {#refs}
+>>>>>>> origin/master
 :::

@@ -6,12 +6,22 @@ $endif$
 %   Titlepage (English or german)
 %----------------------------------------------
 
+<<<<<<< HEAD
 $if(thesis.lang-english)${
+=======
+
+\afterpage{%
+\newgeometry{b5paper}
+>>>>>>> origin/master
 \begin{titlepage}
  \begin{spacing}{1}
    \null\vfil
     \pagenumbering{gobble}
+<<<<<<< HEAD
     \begin{center}%
+=======
+      \begin{center}%
+>>>>>>> origin/master
       $if(thesis.university)${\large $thesis.university$ \par} $else${\vskip 1cm}$endif$
       $if(thesis.faculty)${\LARGE $thesis.faculty$\par} $else${\vskip 1cm}$endif$
       \vspace*{0.3cm}
@@ -21,7 +31,15 @@ $if(thesis.lang-english)${
       $if(thesis.title)${\LARGE \sffamily $thesis.title$ \par}$else${\vskip 1cm}$endif$
       \vspace*{0.5cm}
       $if(thesis.subtitle)${\Large\sffamily $thesis.subtitle$ \par}$else${\vskip 1cm}$endif$
+<<<<<<< HEAD
       $if(thesis.author)${submitted by\par}$endif$
+=======
+      $if(thesis.lang-english)${
+        $if(thesis.author)${submitted by\par}$else${\vskip 0.5cm}$endif$
+      }$else${
+        $if(thesis.author)${vorgelegt von \par}$else${\vskip 0.5cm}$endif$
+      }$endif$
+>>>>>>> origin/master
       $if(thesis.author)${\large \lineskip .5em \begin{tabular}[t]{c} {\LARGE $thesis.author$} \end{tabular}\par}$else${\vskip 1cm}$endif$
       \rule{\linewidth}{1mm} \par
       \vskip 1cm%
@@ -29,7 +47,11 @@ $if(thesis.lang-english)${
       $if(thesis.lang-english)${
         $if(thesis.type)${\normalsize{to achieve the academic degree of}\par}$else${\vskip 0.5cm}$endif$
       }$else${
+<<<<<<< HEAD
         $if(thesis.type)${\normalsize{vorgelegt von}\par}$else${\vskip 0.5cm}$endif$
+=======
+        $if(thesis.type)${\normalsize{zum erreichen des akademischen Grads}\par}$else${\vskip 0.5cm}$endif$
+>>>>>>> origin/master
       }$endif$
       $if(thesis.degree)${\textbf{\Large{Bachelor of Education}}\vskip 0.5cm}$else${\vskip 0.5cm}$endif$
       \begin{tabular}{ll}
@@ -40,8 +62,16 @@ $if(thesis.lang-english)${
     \afterpage{\blankpage}
   \end{spacing}
 \end{titlepage}
+<<<<<<< HEAD
 \newpage
 }$endif$
+=======
+\clearpage
+\restoregeometry
+}
+\newpage
+
+>>>>>>> origin/master
 
 
 %----------------------------------------------
@@ -69,6 +99,7 @@ $endif$
 
 
 %----------------------------------------------
+<<<<<<< HEAD
 %   Set Appendice language
 %----------------------------------------------
 
@@ -82,16 +113,22 @@ $endif$
 $endif$
 
 %----------------------------------------------
+=======
+>>>>>>> origin/master
 %   List of figures
 %----------------------------------------------
 
 $if(lof)$
+<<<<<<< HEAD
 $if(thesis.lang-english)$
     \listoffigures
 $else$
     \renewcommand*\listfigurename{Abbildungsverzeichnis}
     \listoffigures
 $endif$
+=======
+    \listoffigures
+>>>>>>> origin/master
 $endif$
 
 
@@ -101,11 +138,15 @@ $endif$
 
 
 $if(lot)$
+<<<<<<< HEAD
 $if(thesis.lang-english)$
     \listoftables
 $else$
     \renewcommand*\listtablename{Tabellenverzeichnis}
     \listoftables
 $endif$
+=======
+    \listoftables
+>>>>>>> origin/master
 $endif$
 
