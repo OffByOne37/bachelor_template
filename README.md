@@ -6,23 +6,29 @@
 install.packages("quarto")
 ```
 
-## 2. Install "tinytex"
+## 2. Install r-package "tinytex"
 
 ```         
 install.packages("tinytex")
 ```
 
-## 3. Create new folder for you bachelor project
+## 3. Install TinyTex via r-package
 
-## 4. Change RStudio working directory to new folder
+```
+tinytex::install_tinytex()
+```
 
-## 5. Get template from Github via quarto
+## 4. Create new folder for you bachelor project
+
+## 5. Change RStudio working directory to new folder
+
+## 6. Get template from Github via quarto
 
 ```         
 quarto::quarto_use_template("OffByOne37/bachelor_template")
 ```
 
-## 6. Render index.qmd
+## 7. Render index.qmd
 
 ```         
 click render button in RStudio
