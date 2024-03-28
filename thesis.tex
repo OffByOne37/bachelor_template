@@ -272,7 +272,7 @@
 \@ifundefined{codebgcolor}{\definecolor{codebgcolor}{HTML}{faf8f7}}{}
 \makeatother
 \makeatletter
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[borderline west={3pt}{0pt}{shadecolor}, frame hidden, breakable, enhanced, sharp corners, boxrule=0pt, colback={codebgcolor}]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[breakable, borderline west={3pt}{0pt}{shadecolor}, colback={codebgcolor}, frame hidden, enhanced, boxrule=0pt, sharp corners]}{\end{tcolorbox}}\fi
 \makeatother
 \ifLuaTeX
 \usepackage[bidi=basic]{babel}
@@ -714,7 +714,7 @@ nec nunc. Orci varius natoque penatibus et magnis dis parturient montes,
 nascetur ridiculus mus. Aenean a fringilla dui, eu interdum ex. Mauris
 auctor consectetur arcu, id tincidunt odio iaculis sit amet.
 
-\begin{tcolorbox}[enhanced jigsaw, bottomtitle=1mm, coltitle=black, opacitybacktitle=0.6, breakable, titlerule=0mm, toptitle=1mm, colframe=quarto-callout-note-color-frame, rightrule=.15mm, bottomrule=.15mm, colback=white, arc=.35mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Hinweis}, toprule=.15mm, colbacktitle=quarto-callout-note-color!10!white, left=2mm, leftrule=.75mm, opacityback=0]
+\begin{tcolorbox}[enhanced jigsaw, rightrule=.15mm, opacityback=0, bottomtitle=1mm, left=2mm, breakable, colbacktitle=quarto-callout-note-color!10!white, leftrule=.75mm, coltitle=black, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Hinweis}, bottomrule=.15mm, colback=white, toptitle=1mm, toprule=.15mm, colframe=quarto-callout-note-color-frame, titlerule=0mm, arc=.35mm, opacitybacktitle=0.6]
 
 This is a callout note. Check the Quarto documentation on
 \href{https://quarto.org/docs/authoring/callouts.html}{callout notes}
