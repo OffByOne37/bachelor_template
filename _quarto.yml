@@ -78,5 +78,5 @@ echo: false
 warning: false
 message: false
 
-keep-tex: true
+#keep-tex: true
 
