@@ -6,7 +6,6 @@ $endif$
 %   Titlepage (English or german)
 %----------------------------------------------
 
-
 \afterpage{%
 \newgeometry{b5paper}
 \begin{titlepage}
@@ -46,11 +45,13 @@ $endif$
     \afterpage{\blankpage}
   \end{spacing}
 \end{titlepage}
-\clearpage
+\newpage
 \restoregeometry
 }
-\newpage
 
+~
+\thispagestyle{empty}
+\clearpage
 
 
 %----------------------------------------------
@@ -70,6 +71,7 @@ $endif$
 %----------------------------------------------
 
 $if(thesis.abstract-german)$
+\clearpage
 \section*{\sffamily Abstract}
 \addcontentsline{toc}{chapter}{Abstract - Deutsch}
 \normalsize{$thesis.abstract-german$}
