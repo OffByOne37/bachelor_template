@@ -6,13 +6,13 @@
 install.packages("quarto")
 ```
 
-## 2. Install r-package "tinytex"
+## 2. Install r-package "tinytex" (skip if installed)
 
 ```         
 install.packages("tinytex")
 ```
 
-## 3. Install TinyTex via r-package
+## 3. Install TinyTex via r-package (skip if installed)
 
 ```
 tinytex::install_tinytex()
@@ -28,7 +28,7 @@ tinytex::install_tinytex()
 quarto::quarto_use_template("OffByOne37/bachelor_template")
 ```
 
-## 7. Render index.qmd
+## 7. Render index.qmd (If first itme rendering with TinyTex then it will take quiet some time)
 
 ```         
 click render button in RStudio
